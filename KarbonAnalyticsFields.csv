@@ -1,0 +1,811 @@
+DATABASE,SCHEMA,CATEGORY,TABLE,FIELD,TYPE,DESCRIPTION
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,WORK_ITEM_ID,VARCHAR(12),The unique identifier for the work item whose details are being provided.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,WORK_TITLE,VARCHAR(254),The title of the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,WORK_TYPE,VARCHAR(256),The type of the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,CREATED_DATETIME,TIMESTAMP_NTZ(9),The date time the work item was created.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,START_DATETIME,TIMESTAMP_NTZ(9),The date time the work item was started.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,DUE_DATETIME,TIMESTAMP_NTZ(9),The due DateTime of the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,DEADLINE_DATETIME,TIMESTAMP_NTZ(9),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,COMPLETED_DATETIME,TIMESTAMP_NTZ(9),The DateTime the work item was completed.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,PRIMARY_STATUS,VARCHAR(50),The primary status of the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,SECONDARY_STATUS,VARCHAR(50),The secondary status of the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,SECONDARY_STATUS_ORDER,"NUMBER(38,5)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,REPEAT_SCHEDULE,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,CURRENT_STATUS_ENTRY_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,WORK_TEMPLATE_ID,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,WORK_TEMPLATE,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,WORK_DESCRIPTION,VARCHAR(200),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,DIMN_WORK_ITEM,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,WORK_ITEM_ID,VARCHAR(12),The unique identifier for the work item whose details are being provided.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,REPORTING_DATE,DATE,The business date for which the report is run.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,WORK_TITLE,VARCHAR(254),The title of the work item
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,CLIENT_ID,VARCHAR(16777216),The client's unique identifier to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,CLIENT,VARCHAR(256),The client's name to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,CLIENT_TYPE,VARCHAR(16777216),"The client's type to which the work item belongs to. Can be one of - Individual, Organization or Client Group."
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,INTERNAL_CLIENT_ID,VARCHAR(16777216),The User Profile to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,INTERNAL_CLIENT,VARCHAR(500),The name of the User to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,WORK_TYPE_ID,VARCHAR(16777216),The type code of the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,WORK_TYPE,VARCHAR(256),The type of the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,PRIMARY_STATUS_ID,VARCHAR(16777216),The primary status code in which the work item currently sits.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,SECONDARY_STATUS_ID,VARCHAR(12),The secondary status code in which the work item currently sits.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,PRIMARY_STATUS,VARCHAR(50),The primary status name in which the work item currently sits.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,SECONDARY_STATUS,VARCHAR(50),The secondary status name in which the work item currently sits.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,SECONDARY_STATUS_ORDER,"NUMBER(38,5)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,CURRENT_STATUS_ENTRY_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,REPEAT_SCHEDULE,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,CREATED_DATETIME,TIMESTAMP_NTZ(9),The date and time when the work item was created.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,CREATED_BY_ID,VARCHAR(12),The user profile's unique identifier who created the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,CREATED_BY,VARCHAR(500),The user profile's name who created the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,START_DATETIME,TIMESTAMP_NTZ(9),The date and time when the work item was started. In <timezone>
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,ASSIGNED_TO_ID,VARCHAR(12),The user profile's unique identifier to whom the work item is currently assigned to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,ASSIGNED_TO,VARCHAR(500),The user profile's name to whom the work item is currently assigned to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,DUE_DATETIME,TIMESTAMP_NTZ(9),The date and time when the work item is expected to be completed.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,DEADLINE_DATETIME,TIMESTAMP_NTZ(9),The date and time when the work item is due. In <timezone>
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,COMPLETED_DATETIME,TIMESTAMP_NTZ(9),The date and time when the work item is completed. In <timezone>
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,COMPLETED_BY_ID,VARCHAR(12),The user profile's unique identifier who completed the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,COMPLETED_BY,VARCHAR(500),The user profile's name who completed the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,REPEAT_SCHEDULE,VARCHAR(100),The frequency that the work item is set to repeat
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,USER_DEFINED_CLIENT_ID,VARCHAR(16777216),An id created by the user for internal use.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,WORK_TEMPLATE_ID,VARCHAR(16777216),The unique identifier of the work template used to create the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,WORK_TEMPLATE,VARCHAR(200),The name of the work template used to create the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,FIXED_FEE_ESTIMATED_COST,"NUMBER(30,2)",The estimated fixed fee cost associated with the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,BUDGETED_MINUTES,"NUMBER(38,0)",The budgeted minutes for a work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,BUDGETED_COST,"NUMBER(30,2)",The budgeted cost for a work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,EXPENSE_AMOUNT,"NUMBER(30,2)",The total expense amount against the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,BILLABLE_EXPENSE_AMOUNT,"NUMBER(30,2)",The billable expense amount against the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,TIME_ENTRY_MINUTES,"NUMBER(38,0)",Total time entries in minutes against the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,TIME_ENTRY_COST,"NUMBER(30,2)",Total time entry costs against the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,BUDGET_REMAINING_HOURS,"NUMBER(38,6)",The amount of budgeted hours minus the inputted time entry hours.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,INTERNAL_TASKS_COMPLETED_COUNT,"NUMBER(18,0)",The number of tasks (not including client task) that have been completed on the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,INTERNAL_TASKS_PENDING_COUNT,"NUMBER(19,0)",The number of tasks (not including client task) that have not been completed on the work item.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DETAILS,IS_WORK_ITEM_OVERDUE,BOOLEAN,Flag indicating if a work item is overdue or not.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,WORK_ITEM_ID,VARCHAR(12),The unique identifier for the work item whose details are being provided.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,CHANGED_AT_DATETIME,TIMESTAMP_NTZ(9),The DateTime when the status changed from previous to current.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,WORK_TITLE,VARCHAR(254),The title of the work item
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,WORK_TYPE_ID,VARCHAR(16777216),The id for the work type to which the work item belongs.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,WORK_TYPE,VARCHAR(256),The work type name to which the work item belongs.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,ASSIGNED_TO_ID,VARCHAR(12),The user identifier to whom the work item was assigned to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,ASSIGNED_TO,VARCHAR(500),The name of the user to whom the work item was assigned to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,CHANGED_BY_ID,VARCHAR(12),The user identifier who changed the work item status.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,CHANGED_BY,VARCHAR(500),The name of the user who changed the work item status.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,CLIENT_ID,VARCHAR(16777216),The client's unique identifier to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,CLIENT,VARCHAR(256),The client's name to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,INTERNAL_CLIENT_ID,VARCHAR(16777216),The User Profile to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,INTERNAL_CLIENT,VARCHAR(500),The name of the User to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,CHANGED_AT_DATE,DATE,The date when the status changed from previous to current.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,PREVIOUS_PRIMARY_STATUS_ID,VARCHAR(16777216),The primary status id of the work item before the change.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,PREVIOUS_PRIMARY_STATUS,VARCHAR(50),The primary status name of the work item before the change.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,PREVIOUS_SECONDARY_STATUS_ID,VARCHAR(12),The secondary status id of the work item before the change.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,PREVIOUS_SECONDARY_STATUS,VARCHAR(50),the secondary status name of the work item before the change.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,PREVIOUS_SECONDARY_STATUS_ORDER,"NUMBER(38,5)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,PRIMARY_STATUS_ID,VARCHAR(16777216),The primary status id of the work item after the change
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,PRIMARY_STATUS,VARCHAR(50),the primary status name of the work item after the change.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,SECONDARY_STATUS_ID,VARCHAR(12),The secondary status id of the work item after the change.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,SECONDARY_STATUS,VARCHAR(50),the secondary status name of the work item after the change.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,SECONDARY_STATUS_ORDER,"NUMBER(38,5)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_STATUS_HISTORY,AUTOMATICALLY_UPDATED,BOOLEAN,Flag indicating if the status change was done by an automator.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,WORK_ITEM_ID,VARCHAR(12),The unique identifier for the work item whose details are being provided.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,WORK_ITEM_TITLE,VARCHAR(254),The title of the work item
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,WORK_ITEM_CREATED_AT,TIMESTAMP_NTZ(9),The DateTime when the work item was created.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,ASSIGNED_TO_ID,VARCHAR(12),The user identifier to whom the work item was assigned to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,ASSIGNED_TO,VARCHAR(500),The name of the user to whom the work item was assigned to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,CLIENT_ID,VARCHAR(12),The client's unique identifier to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,CLIENT_NAME,VARCHAR(256),The client's name to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,USER_ID,VARCHAR(12),The User Profile to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,USER_NAME,VARCHAR(500),The name of the User to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,PRIMARY_STATUS_ID,VARCHAR(16777216),The primary status code in which the work item currently sits.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,PRIMARY_STATUS_NAME,VARCHAR(50),The primary status name in which the work item currently sits.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,SECONDARY_STATUS_ID,VARCHAR(12),The secondary status code in which the work item currently sits.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,SECONDARY_STATUS_NAME,VARCHAR(50),The secondary status name in which the work item currently sits.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,SECONDARY_STATUS_ORDER,"NUMBER(38,5)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,STATUS_ENTRY_DATE,TIMESTAMP_NTZ(9),The date on which the work item entered the given primary and secondary status.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,STATUS_EXIT_DATE,TIMESTAMP_NTZ(9),The date on which the work item exited the given primary and secondary status.
+KPI_DATABASE,SECURE_VIEWS,Work-related-data,WORK_ITEM_DAYS_IN_STATUS,DAYS_IN_STATUS,"NUMBER(9,0)",The number of days the work item was in the given primary and secondary status.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CONTACT_MEMBER_RELATIONSHIP,RELATIONSHIP_TYPE,VARCHAR(32),"Describes the nature of the relationship. Possible values include self relationship, client group member, and organization member."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CONTACT_MEMBER_RELATIONSHIP,CONTACT_ID,VARCHAR(16777216),The unique identifier of the contact.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CONTACT_MEMBER_RELATIONSHIP,CONTACT,VARCHAR(256),The name of the contact.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CONTACT_MEMBER_RELATIONSHIP,CONTACT_TYPE,VARCHAR(16777216),"The type of the contact. It can be one of Person, Organisation, or Client Group."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CONTACT_MEMBER_RELATIONSHIP,RELATED_CONTACT_ID,VARCHAR(16777216),The unique identifier of the subordinate contact in the relationship.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CONTACT_MEMBER_RELATIONSHIP,RELATED_CONTACT,VARCHAR(256),The name of the subordinate contact in the relationship.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CONTACT_MEMBER_RELATIONSHIP,RELATED_CONTACT_TYPE,VARCHAR(16777216),"The type of the subordinate contact in the relationship. It can be one of Person, Organisation, or Client Group."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CONTACT_MEMBER_RELATIONSHIP,ACCOUNT_ID,VARCHAR(16777216),The tenant's unique identifier to whom this data belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CONTACT_MEMBER_RELATIONSHIP,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom this data belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CONTACT_MEMBER_RELATIONSHIP,EFFECTIVE_AS_DATE,DATE,Date this table was last extracted from its source.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,CLIENT_ID,VARCHAR(16777216),The unique identifier of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,CLIENT,VARCHAR(256),The name of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,DATE_CREATED,TIMESTAMP_NTZ(9),The date when the client was created in the system.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,CLIENT_TYPE,VARCHAR(16777216),"The type of client. It can be one of Individual (Contact), Organisation, Client Group."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,CLIENT_SUBTYPE,VARCHAR(200),This is a further sub classification of a client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,CLIENT_PRIMARY_EMAIL_ADDRESS,VARCHAR(256),The primary email address of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,USER_DEFINED_CLIENT_ID,VARCHAR(100),An id created by the user for internal use.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,CLIENT_OWNER_USER_ID,VARCHAR(12),The identifier of the User Profile who owns the responsibilities of this client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,CLIENT_OWNER_USER_NAME,VARCHAR(500),The name of the User Profile who owns the responsibilities of this client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,CLIENT_MANAGER_USER_ID,VARCHAR(12),The identifier of the User Profile who manages the responsibilities of this client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,CLIENT_MANAGER_USER_NAME,VARCHAR(500),The name of the User Profile who manages the responsibilities of this client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,CLIENT_LEADERSHIP_POSITION_THREE_ID,VARCHAR(12),The unique identifier of the user who has been assigned to the client leadership position three.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,CLIENT_LEADERSHIP_POSITION_THREE_USER_NAME,VARCHAR(500),The name of the user who has been assigned to the client leadership position three.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,CLIENT_LEADERSHIP_POSITION_FOUR_ID,VARCHAR(12),The unique identifier of the user who has been assigned to the client leadership position four.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,CLIENT_LEADERSHIP_POSITION_FOUR_USER_NAME,VARCHAR(500),The name of the user who has been assigned to the client leadership position four.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,PRIVACY_LEVEL,VARCHAR(16777216),The clients privacy level.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,FIRST_NAME,VARCHAR(16777216),The contact's first name. Does not exist for organizations or client groups.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,MIDDLE_NAME,VARCHAR(16777216),The contact's middle name. Does not exist for organizations or client groups.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,LAST_NAME,VARCHAR(16777216),The contact's last name. Does not exist for organizations or client groups.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,PREFERRED_NAME,VARCHAR(16777216),The contact's preferred name. Does not exist for organizations or client groups.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,SUFFIX,VARCHAR(16777216),The contact's suffix. Does not exist for organizations or client groups.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,SALUTATION,VARCHAR(16777216),The contact's salutation. Does not exist for organizations or client groups.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,CLIENT_IDENTIFIER,VARCHAR(16777216),The identifier of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,DESCRIPTION,VARCHAR(16777216),The description of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,PRIMARY_PHONE_NUMBER,VARCHAR(16777216),The first phone number entered in the starred (primary) contact card (for contacts) or the contact details (for organizations and client groups).
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,PRIMARY_PHONE_NUMBER_COUNTRY_CODE,VARCHAR(16777216),The country code of the first phone number entered in the starred (primary) contact card (for contacts) or the contact details (for organizations and client groups).
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,PRIMARY_WEBSITE,VARCHAR(16777216),The first website entered in the starred (primary) contact card (for contacts) or the contact details (for organizations and client groups).
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,PRIMARY_CONTACT_ROLE,VARCHAR(16777216),The role of the primary contact card (for contacts). Does not exist for organizations or client groups.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,PRIMARY_ADDRESS_LINE,VARCHAR(16777216),The street address of the starred (primary) contact card of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,PRIMARY_ADDRESS_CITY,VARCHAR(16777216),The city of the starred (primary) contact card of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,PRIMARY_ADDRESS_STATE_PROVINCE_COUNTY,VARCHAR(16777216),"The state, province or county of the starred (primary) contact card of the client."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,PRIMARY_ADDRESS_ZIPCODE,VARCHAR(16777216),The zipcode of the starred (primary) contact card of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,PRIMARY_ADDRESS_COUNTRY_CODE,VARCHAR(16777216),The country code of the starred (primary) contact card of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_GROUP,CLIENT_GROUP_ID,VARCHAR(12),The unique identifier of a client group.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_GROUP,CLIENT_GROUP_NAME,VARCHAR(100),The name of the client group.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_GROUP,CLIENT_ID,VARCHAR(12),The unique identifier of the client who is a member of this group.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_GROUP,CLIENT,VARCHAR(256),The name of the client who is a member of this group.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_GROUP,CLIENT_GROUP_MEMBER_TYPE,VARCHAR(16777216),"The type of client. It can be one of an Individual (Contact), Organisation, or Client Group."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_GROUP,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_GROUP,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,CLIENT_ID,VARCHAR(16777216),The unique identifier of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,LEGAL_NAME,VARCHAR(16777216),Legal name of the client as entered in the accounting details of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,TRADING_NAME,VARCHAR(16777216),Trading name of the client as entered in the accounting details of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,BUSINESS_NAME,VARCHAR(16777216),Business name of the client as entered in the accounting details of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,TAX_COUNTRY_CODE,VARCHAR(16777216),Tax country code of the client as entered in the accounting details of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,PROVISIONAL_TAX_BASIS,VARCHAR(16777216),Provisional tax basis of the client as entered in the accounting details of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,PROVISIONAL_TAX_RATIO,"NUMBER(38,0)",Provisional tax ratio of the client as entered in the accounting details of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,LINE_OF_BUSINESS,VARCHAR(16777216),Line of business of the client as entered in the accounting details of the client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,SELLS,VARCHAR(16777216),"Drop down selection to indicate whether the client sells services, products, both or other, as entered in the accounting details of the client"
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,REVENUE_MODEL,VARCHAR(16777216),"Drop down selection to indicate the revenue model of the client, as entered in the accounting details of the client"
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,ANNUAL_REVENUE,"NUMBER(38,0)","Annual revenue of the client, as entered in the accounting details of the client"
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,ORGANIZATION_BUSINESS_ENTITY_TYPE,VARCHAR(16777216),"Drop down selection to indicate the organization business entity type of the client, as entered in the accounting details of the client"
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,ORGANIZATION_VALUATION,"NUMBER(38,0)","Organization valuation, as entered in the accounting details of the organization"
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,INCORPORATION_DATE,TIMESTAMP_NTZ(9),"Incorporation date, as entered in the accounting details of the organization"
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,INCORPORATION_STATE,VARCHAR(16777216),"Incorporation state, as entered in the accounting details of the organization"
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,CONTACT_SALUTATION,VARCHAR(16777216),"Contact Salutation, as entered in the accounting details for contacts."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,USER_DEFINED_IDENTIFIER,VARCHAR(16777216),"User Defined Identifier, as entered in the accounting details for contacts."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,FINANCIAL_YEAR_END_DAY,"NUMBER(38,0)","Financial year end day of the client, as entered in the accounting details -> tax section of the client"
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,FINANCIAL_YEAR_END_MONTH,"NUMBER(38,0)","Financial year end month of the client, as entered in the accounting details -> tax section of the client"
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,SALES_TAX_BASIS,VARCHAR(16777216),"Sales tax basis of the client, as entered in the accounting details -> tax section of the client"
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,SALES_TAX_PERIOD,VARCHAR(16777216),"Sales tax period of the client, as entered in the accounting details -> tax section of the client"
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,INCOME_TAX_INSTALLMENT_PERIOD,VARCHAR(16777216),"Income tax installment period of the client, as entered in the accounting details -> tax section of the client"
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,SERVICES,VARCHAR(16777216),"Services of the client, as entered in the accounting details -> tax section of the client"
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom the email belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_CLIENT_ACCOUNTING_DETAIL,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom the email belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DEFAULT_BILLING_CONTACT,ENTITY_ID,VARCHAR(12),The unique identifier of the entity
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DEFAULT_BILLING_CONTACT,ENTITY_TYPE,VARCHAR(16777216),"The type of entity. Possible types of entities include person, client group, work item, and organization."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DEFAULT_BILLING_CONTACT,CONTACT,VARCHAR(256),"The name of the client/contact, when applicable."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DEFAULT_BILLING_CONTACT,WORK_TITLE,VARCHAR(254),"The name of the work item, when applicable."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DEFAULT_BILLING_CONTACT,BILL_TO_CONTACT_ID,VARCHAR(12),The default billing contact's unique identifier.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DEFAULT_BILLING_CONTACT,BILL_TO_CONTACT_TYPE,VARCHAR(16777216),The default billing contact's type.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DEFAULT_BILLING_CONTACT,BILL_TO_CONTACT,VARCHAR(256),The default billing contact's name.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DEFAULT_BILLING_CONTACT,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom this data belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DEFAULT_BILLING_CONTACT,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom this data belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_ORGANIZATION_MEMBER,ACCOUNT_ID,VARCHAR(16777216),The tenant's unique identifier to whom this data belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_ORGANIZATION_MEMBER,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom this data belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_ORGANIZATION_MEMBER,ORGANIZATION,VARCHAR(100),The name of the organization (one of three subtypes of clients.)
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_ORGANIZATION_MEMBER,ORGANIZATION_ID,VARCHAR(16777216),The organization's unique identifier.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_ORGANIZATION_MEMBER,PERSON,VARCHAR(256),The name of an individual (contact) added in Karbon
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_ORGANIZATION_MEMBER,PERSON_ID,VARCHAR(16777216),The individual's (contacts) unique identifer.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,DIMN_ORGANIZATION_MEMBER,REPORTING_DATE,DATE,The date as of which the data is representative of.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,CONTACT,VARCHAR(256),The client's name with who the response email interacted.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,CLIENT_MANAGER,VARCHAR(500),The name of the User Profile who manages the responsibilities of this client. Defined on the Details tab of the contact.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,CLIENT_MANAGER_ID,VARCHAR(12),The identifier of the User Profile who manages the responsibilities of this client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,CLIENT_OWNER,VARCHAR(500),The name of the User Profile who owns the responsibilities of this client. Defined on the Details tab of the contact.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,CLIENT_OWNER_ID,VARCHAR(12),The identifier of the User Profile who owns the responsibilities of this client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,CONTACT_ID,VARCHAR(16777216),The client's unique identifier with who the response email interacted.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,CONTACT_TYPE,VARCHAR(16),"The type of client: Individual (Contact), Organisation, Client Group."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,CONVERSATION_ID,VARCHAR(12),The ID of the thread of emails in which the response email is included.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,EMAIL_SUBJECT,VARCHAR(16777216),The subject line of the response email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,EMAIL_MESSAGE_ID,VARCHAR(16777216),The identifier of the response email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,RESPONSE_DATETIME,TIMESTAMP_NTZ(9),The timestamp of the response email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,RESPONSE_DIRECTION,VARCHAR(8),"The categorization of response email into ""sent"" or ""received"". Sent means the email was sent to the client, and received means the email was received by the client."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,EMAIL_SENT_BY,VARCHAR(12),The name of the user who sent the response email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,EMAIL_SENT_BY_ID,VARCHAR(500),The identifier of the user who sent the response email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,RESPONSE_TIME_HOURS,,The time (in hours) it took the user to respond.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,RESPONSE_TIME_MINUTES,"NUMBER(18,0)",The time (in minutes) it took the user to respond.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom the email belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_CONVERSATION_RESPONSE_DETAILS,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom the email belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_INTERACTION_DAILY_SUMMARY,INTERACTION_DATE,DATE,The date the email was sent.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_INTERACTION_DAILY_SUMMARY,INTERACTION_DIRECTION,VARCHAR(8),"The categorization of email into ""sent"" or ""received"". Sent means the email was sent to the client, and received means the email was received by the client."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_INTERACTION_DAILY_SUMMARY,CONTACT_ID,VARCHAR(16777216),The client's unique identifier to who the email interacted. Defined on the Details tab of the contact.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_INTERACTION_DAILY_SUMMARY,EMAIL_SENT_BY_ID,VARCHAR(12),The unique identifier for who sent the email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_INTERACTION_DAILY_SUMMARY,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom the email belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_INTERACTION_DAILY_SUMMARY,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom the email belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_INTERACTION_DAILY_SUMMARY,CLIENT_OWNER_ID,VARCHAR(12),The unique identifier of the User Profile who owns the responsibilities of this client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_INTERACTION_DAILY_SUMMARY,CLIENT_OWNER,VARCHAR(500),The name of the User Profile who owns the responsibilities of this client. Defined on the Details tab of the contact.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_INTERACTION_DAILY_SUMMARY,CLIENT_MANAGER_ID,VARCHAR(12),The identifier of the User Profile who manages the responsibilities of this client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_INTERACTION_DAILY_SUMMARY,CLIENT_MANAGER,VARCHAR(500),The name of the User Profile who manages the responsibilities of this client. Defined on the Details tab of the contact.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_INTERACTION_DAILY_SUMMARY,CONTACT,VARCHAR(256),The client's name with who the email interacted.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_INTERACTION_DAILY_SUMMARY,CONTACT_TYPE,VARCHAR(16),"The type of client: Individual (Contact), Organisation, Client Group."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_INTERACTION_DAILY_SUMMARY,EMAIL_SENT_BY,VARCHAR(500),The name of the user who sent the email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,CLIENT_EMAIL_INTERACTION_DAILY_SUMMARY,TOTAL_INTERACTION_COUNT,"NUMBER(18,0)",The count of emails both sent and received
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom the email belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,ACCOUNT_NAME,VARCHAR(500),The tenant's unique identifier to whom the email belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,CONTACT_ID,VARCHAR(16777216),The client's unique identifier to who the response email interacted with.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,CONTACT,VARCHAR(256),The client's name to who the response email interacted with.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,CONTACT_TYPE,VARCHAR(16),"The type of client: Individual (Contact), Organisation, Client Group."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,CONVERSATION_ID,VARCHAR(12),The ID of the thread of emails in which the response email is included.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,CLIENT_OWNER_ID,VARCHAR(12),The identifier of the User Profile who owns the responsibilities of this client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,CLIENT_OWNER,VARCHAR(500),The name of the User Profile who owns the responsibilities of this client. Defined on the Details tab of the contact.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,CLIENT_MANAGER_ID,VARCHAR(12),The identifier of the User Profile who manages the responsibilities of this client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,CLIENT_MANAGER,VARCHAR(500),The name of the User Profile who manages the responsibilities of this client. Defined on the Details tab of the contact.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,EMAIL_SUBJECT,VARCHAR(16777216),The subject line of the response email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,EMAIL_MESSAGE_ID,VARCHAR(16777216),The identifier of the response email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,EMAIL_SENT_BY,VARCHAR(500),The name of user who sent the response email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,EMAIL_SENT_BY_ID,VARCHAR(12),The identifier of user who sent the response email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,RESPONSE_TIME_MINUTES,"NUMBER(18,0)",The time (in minutes) it took the user to respond.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,RESPONSE_DATETIME,TIMESTAMP_NTZ(9),The timestamp of the response email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL,RESPONSE_DIRECTION,VARCHAR(8),"The categorization of response email into ""sent"" or ""received"". Sent means the email was sent to the client, received means the email was received by the client."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,EMAIL_MESSAGE_ID,VARCHAR(16777216),The unique identifier of the email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,EMAIL_CONVERSATION_ID,VARCHAR(12),The unique identifier of the email thread. An email thread refers to a sequence of email messages that are part of the same conversation
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,EMAIL_SENT_BY_USER_ID,VARCHAR(12),The unique identifier of the user who sent the email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,EMAIL_SENT_BY,VARCHAR(500),The name of the user who sent the email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,EMAIL_RECEIVED_BY_USER_ID,VARCHAR(12),The unique identifer of the user who received the email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,EMAIL_RECEIVED_BY,VARCHAR(500),The name of the user who received the email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,CONTACT_ID,VARCHAR(16777216),The unique identifier of the client associated with the email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,CONTACT,VARCHAR(256),The name of the client associated with the email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,CONTACT_TYPE,VARCHAR(16),"The type of client: Individual (Contact), Organisation, or Client Group."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,CLIENT_OWNER_ID,VARCHAR(12),The unique identifier of the user who owns the responsibilities of this client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,CLIENT_OWNER,VARCHAR(500),The name of the user who owns the responsibilities of this client. Defined on the Details tab of the contact.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,CLIENT_MANAGER_ID,VARCHAR(12),The identifier of the user who manages the responsibilities of this client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,CLIENT_MANAGER,VARCHAR(500),The name of the user who manages the responsibilities of this client. Defined on the Details tab of the contact.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,EMAIL_INTERACTION_DATETIME_UTC,TIMESTAMP_NTZ(9),The timestamp of when the email was sent or received in UTC.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,PRECEDING_EMAIL_INTERACTION_DATETIME_UTC,TIMESTAMP_NTZ(9),The timestamp of when the previous email in the thread was sent or received in UTC.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,EMAIL_INTERACTION_DATETIME_LOCAL,TIMESTAMP_NTZ(9),The timestamp of when the email was sent or received in the local timezone of the tenant.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,PRECEDING_EMAIL_INTERACTION_DATETIME,TIMESTAMP_NTZ(9),The timestamp of when the previous email in the thread was sent or received in the local timezone of the tenant.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,RESPONSE_DIRECTION,VARCHAR(8),"The categorization of response email into sent or received. This is in respect to the user. Sent refers to when a user sends an email, and received refers to when the user receives an email."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,EMAIL_SUBJECT,VARCHAR(16777216),The subject line of the email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,IS_REPLY,BOOLEAN,A flag indicating whether the email is a reply.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,IS_FIRST_EMAIL_IN_CONVERSATION,BOOLEAN,A flag indicating whether the email is the first email in the conversation/thread.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,IS_REPLY_TO_CLIENT,BOOLEAN,A flag indicating whether the email is a reply to a client.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,IS_FIRST_REPLY,BOOLEAN,A flag indicating whether the email is the first reply in the conversation/thread.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V3,IS_SELF_RESPONSE,BOOLEAN,<Karbon hs not provided details>
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,RESPONSE_TIME_MINUTES,"NUMBER(18,0)",The time (in minutes) it took the user to respond to the previous email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,RESPONSE_TIME_HOURS,"NUMBER(24,6)",The time (in hours) it took the user to respond to the previous email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,RESPONSE_TIME_DAYS,"NUMBER(30,12)",The time (in days) it took the user to respond to the previous email.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,RESPONSE_TIME_MINUTES_EXCLUDING_WEEKENDS,"NUMBER(21,0)","The time (in minutes) it took the user to respond to the previous email EXCLUDING weekends (Sat, Sun)."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,RESPONSE_TIME_HOURS_EXCLUDING_WEEKENDS,"NUMBER(27,6)","The time (in hours) it took the user to respond to the previous email EXCLUDING weekends (Sat, Sun)."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,RESPONSE_TIME_DAYS_EXCLUDING_WEEKENDS,"NUMBER(33,12)","The time (in days) it took the user to respond to the previous email EXCLUDING weekends (Sat, Sun)."
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom the email belongs to.
+KPI_DATABASE,SECURE_VIEWS,Client-related-data,EMAIL_DETAIL_V2,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom the email belongs to.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_USER,USER_NAME,VARCHAR(500),The name of the user profile.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_USER,USER_ID,VARCHAR(12),The unique identifier of the user profile.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_USER,USER_JOB_TITLE,VARCHAR(500),The job title of the user profile.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_USER,USER_EMAIL_ADDRESS,VARCHAR(256),The email address of the user profile.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_USER,CREATED_DATE,TIMESTAMP_NTZ(9),The date when the user profile was created in the system.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_USER,ACTIVATED_DATE,TIMESTAMP_NTZ(9),The date when the user profile was activated in the system.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_USER,EXPECTED_BILLABLE_MINUTES,"NUMBER(38,0)",The weekly billable minutes of the user profile is expected to work.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_USER,EXPECTED_NONBILLABLE_MINUTES,"NUMBER(38,0)",The weekly non-billable minutes the user profile is expected to work.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_USER,STATUS,VARCHAR(50),The status of the user profile.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_USER,IS_SUPPORT_USER,BOOLEAN,A flag indicating whether the user profile is a support user.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_USER,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_USER,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_TENANT_TEAM,TENANT_TEAM_ID,VARCHAR(16777216),The unique identifier of the tenant team.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_TENANT_TEAM,TENANT_TEAM_NAME,VARCHAR(16777216),The name of the tenant team.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_TENANT_TEAM,PARENT_TENANT_TEAM_ID,VARCHAR(16777216),The unique identifier of the parent's tenant team.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_TENANT_TEAM,PARENT_TENANT_TEAM_NAME,VARCHAR(16777216),The name of the parent's tenant team.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_TENANT_TEAM,ACCOUNT_ID,VARCHAR(16777216),The tenant's unique identifier to whom the team belongs to.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_TENANT_TEAM,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom the team member belongs to.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_TENANT_TEAM_MEMBER,TENANT_TEAM_MEMBER_ID,VARCHAR(32),The unique identifier for the of tenant team and user.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_TENANT_TEAM_MEMBER,TENANT_TEAM_ID,VARCHAR(16777216),The unique identifier of the tenant team.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_TENANT_TEAM_MEMBER,USER_ID,VARCHAR(16777216),The unique identifier of the user under the tenant team.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_TENANT_TEAM_MEMBER,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom the team member belongs to.
+KPI_DATABASE,SECURE_VIEWS,User-and-Team-Data,DIMN_TENANT_TEAM_MEMBER,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom the team member belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,REPORTING_DATE,DATE,The date on which the time entry was submitted for.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,TIME_ENTRY_ID,"NUMBER(38,0)",
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,USER_ID,VARCHAR(12),The unique identifier of the user profile who submitted the time entry.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,USER_NAME,VARCHAR(500),The name of the user profile who submitted the time entry.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,CLIENT_ID,VARCHAR(12),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,CLIENT,VARCHAR(500),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,MINUTES,"NUMBER(38,0)",The amount of time in minutes submitted with the time entry.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,HOURS,"NUMBER(38,6)",The amount of time in hours submitted with the time entry.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,TOTAL_COST,"NUMBER(18,2)","The calculated cost for the time entry is based on the minutes, role and task type."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,CLIENT_ID,VARCHAR(12),The unique identifier of the client.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,CLIENT,VARCHAR(500),The name of the client.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,TASK_TYPE_ID,VARCHAR(12),The unique identifier for the task type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,TASK_TYPE,VARCHAR(200),The name of the task type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,IS_BILLABLE,BOOLEAN,A flag saying whether the task type is billable.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,ROLE_ID,VARCHAR(12),The unique identifier of the role performed by the user.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,ROLE_NAME,VARCHAR(200),The name of role performed by the user.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,WORK_ITEM_ID,VARCHAR(12),The unique identifier for the work item whose details are being provided.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,WORK_ITEM_TITLE,VARCHAR(254),The title of the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,WORK_ITEM_TYPE,VARCHAR(256),The type of the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,DESCRIPTION,VARCHAR(4000),The description added to the submitted time entry.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,TIME_ENTRY_ID,"NUMBER(38,0)",The unique ID of the time entry.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,HOURLY_BILLABLE_RATE,"NUMBER(31,2)",The TOTAL_COST divide by HOURS.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,RECORDED,"NUMBER(38,2)",The total cost but as seen on the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,BILLED,"NUMBER(38,2)",The final amount billed to a client.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,WRITE_ON_OFF,"NUMBER(38,2)",The amount the total cost was increase or decreased by.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,REALIZATION,"NUMBER(38,8)",The BILLED divided by the TOTAL_COST.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_TIME_ENTRY_DETAIL,ACCOUNT_NAME,VARCHAR(500),The tenant's
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WEEKLY_UTILIZATION_SUMMARY,REPORTING_WEEK_START_DATE,DATE,The start date of the reporting week.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WEEKLY_UTILIZATION_SUMMARY,REPORTING_WEEK_END_DATE,DATE,The end date of the reporting week.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WEEKLY_UTILIZATION_SUMMARY,USER_ID,VARCHAR(12),The unique identifier of the user profile.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WEEKLY_UTILIZATION_SUMMARY,USER_NAME,VARCHAR(500),The name of the user profile.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WEEKLY_UTILIZATION_SUMMARY,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WEEKLY_UTILIZATION_SUMMARY,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WEEKLY_UTILIZATION_SUMMARY,EXPECTED_BILLABLE_MINUTES,"NUMBER(38,0)",The weekly billable minutes the user profile is expected to work.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WEEKLY_UTILIZATION_SUMMARY,ACTUAL_BILLABLE_MINUTES,"NUMBER(38,0)",The weekly billable minutes the user profile actually worked.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WEEKLY_UTILIZATION_SUMMARY,EXPECTED_NONBILLABLE_MINUTES,"NUMBER(38,0)",The weekly non-billable minutes the user profile is expected to work.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WEEKLY_UTILIZATION_SUMMARY,ACTUAL_NONBILLABLE_MINUTES,"NUMBER(38,0)",The weekly non-billable minutes the user profile actually worked.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,REPORTING_DATE,,The date as of which the data is representative of.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,INTERNAL_CLIENT_ID,,The User Profile to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,INTERNAL_CLIENT,,The name of the User to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,USER_ID,,The unique identifier of the user profile.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,USER_NAME,,The name of the user profile.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,CLIENT_ID,,The unique identifier of the client.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,CLIENT,,The name of the client.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,ACCOUNT_ID,,The tenant's unique identifier to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,ACCOUNT_NAME,,The tenant's name to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,TASK_TYPE_ID,,The unique identifier for the task type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,TASK_TYPE,,The name of the task type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,TASK_TYPE_BILLABLE_FLAG,,A flag saying whether the task type is billable.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,ROLE_ID,,The unique identifier of the role performed by the user.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,ROLE_NAME,,The name of role performed by the user.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,WORK_ITEM_TYPE_ID,,The type code of the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,WORK_ITEM_TYPE,,The type of the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,REPORTING_DATE_TIME_MINUTES,,Minutes the user logged for the given reporting date.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,MTD_TIME_MINUTES,,Minutes the user logged this month till reporting date.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,QTD_TIME_MINUTES,,Minutes the user logged this quarter till reporting date.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,YTD_TIME_MINUTES,,Minutes the user logged this year till reporting date.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,PREVIOUS_MONTH_TIME_MINUTES,,Minutes the user logged in the previous month.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,PREVIOUS_QUARTER_TIME_MINUTES,,Minutes the user logged in the previous quarter.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,PREVIOUS_YEAR_TIME_MINUTES,,Minutes the user logged in the previous year.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,REPORTING_DATE_TIME_COST,,The total cost amount is based on the minutes logged by the user for the given reporting date.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,MTD_COST,,The total cost amount is based on the minutes logged by the user this month till the reporting date.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,QTD_COST,,The total cost amount is based on the minutes logged by the user this quarter till the reporting date.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,YTD_COST,,The total cost amount is based on the minutes logged by the user this year till the reporting date.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,PREVIOUS_MONTH_COST,,The total cost amount is based on the minutes logged by the user in the previous month.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,PREVIOUS_QUARTER_COST,,The total cost amount is based on the minutes logged by the user in the previous quarter.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,PREVIOUS_YEAR_COST,,The total cost amount is based on the minutes logged by the user in the previous year.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,REPORTING_DATE_RECORD_COUNT,,The total number of time entries logged for the given reporting date.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,MTD_RECORD_COUNT,,The total number of time entries logged this month till reporting date.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,QTD_RECORD_COUNT,,The total number of time entries logged this quarter till reporting date.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,YTD_RECORD_COUNT,,The total number of time entries logged this year till reporting date.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,PREVIOUS_MONTH_RECORD_COUNT,,The total number of time entries logged in the previous month.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,PREVIOUS_QUARTER_RECORD_COUNT,,The total number of time entries logged in the previous quarter.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,USER_WORK_HOURS_SUMMARY,PREVIOUS_YEAR_RECORD_COUNT,,The total number of time entries logged in the previous year.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,REPORTING_DATE,,The date of which the data is representative of.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,WORK_ITEM_ID,,The unique identifier for the work item whose details are being provided.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,WORK_TITLE,,The title of the work item
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,WORK_TYPE_ID,,The type code of the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,WORK_TYPE,,The type of the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,TASK_TYPE_ID,,The unique identifier for the task type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,TASK_TYPE,,The name of the task type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,TASK_TYPE_BILLABLE_FLAG,,A flag saying whether the task type is billable.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,ROLE_ID,,The unique identifier of the roles performed on the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,ROLE_NAME,,The name of the roles performed on the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,ACCOUNT_ID,,The tenant's unique identifier to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,ACCOUNT_NAME,,The tenant's name to whom the Work Item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,USER_ID,,The unique identifier of the user profile for whom the comparison is done.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,USER_NAME,,The name of the user profile for whom the comparison is done.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,INTERNAL_CLIENT_ID,,The User Profile to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,INTERNAL_CLIENT,,The name of the User to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,CLIENT_ID,,The client's unique identifier to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,CLIENT,,The client's name to which the work item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,BUDGETED_MINUTES,,Total minutes budget for the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,ACTUAL_MINUTES,,The actual minutes spent on the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,BUDGETED_COST,,The total budgeted cost for the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WORK_ITEM_BUDGET_VS_ACTUAL,ACTUAL_COST,,The actual cost incurred on the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,EFFECTIVE_AS_DATE,,Date this table was last extracted from it's source.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,BUDGET_ID,,The unique identifier for each budget estimate added to a work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,MY_WEEK_ITEM_ID,,The unique identifier for My Week entries.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,WORK_ITEM_ID,,The unique identifier for the work item to which the budget belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,WORK_ITEM,,The title of the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,USER_ID,,The unique identifier of the user profile.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,USER_NAME,,The name of the user profile.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,TASK_TYPE_ID,,The unique identifier for the task type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,TASK_TYPE,,The name of the task type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,BILLING_TYPE_ID,,The unique identifier for the billing type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,BILLING_TYPE,,The name of the billing type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,ROLE_ID,,The unique identifier of the roles performed on the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,ROLE_NAME,,The name of the roles performed on the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,IS_BILLABLE,Boolean,A flag saying whether the task type is billable.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,BUDGET_MINUTES,,The amount of time (in minutes) that is entered on a budget estimate.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,HOURLY_RATE,,The hourly rate that is set on a budget estimate. There is the option to chose the default hourly rate of the specified role or a customized rate.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,BUDGET_AMOUNT,,The final montary amount of the budget estimate based on the entered estimated time and hourly rate.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,FIXED_FEE_AMOUNT,,The fixed fee associated with a work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,ACCOUNT_ID,,The tenant's unique identifier to whom the email belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,ACCOUNT_NAME,,The tenant's name to whom the email belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BUDGET,MODIFIED_DATE,,The timestamp that the record was last modified at.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,EXPENSE_DETAIL,BUSINESS_DATE,DATE,Date this table was last extracted from it's source.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,EXPENSE_DETAIL,EXPENSE_ID,"NUMBER(38,0)",The unique identifier for the expense.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,EXPENSE_DETAIL,CREATED_DATETIME,DATE,Date the expense was created.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,EXPENSE_DETAIL,DESCRIPTION,VARCHAR(250),The description that was added to the expense.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,EXPENSE_DETAIL,EXPENSE_AMOUNT,"NUMBER(18,2)",The amount added as the cost amount to the expense.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,EXPENSE_DETAIL,BILLABLE_AMOUNT,"NUMBER(18,2)",The amount added as the billable amount to the expense.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,EXPENSE_DETAIL,CREATED_BY_ID,VARCHAR(12),The user profile's unique identifier who created the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,EXPENSE_DETAIL,CREATED_BY,VARCHAR(500),The user profile's name who created the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,EXPENSE_DETAIL,WORK_ITEM_ID,VARCHAR(12),The unique identifier for the work item that the expense was assigned to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,EXPENSE_DETAIL,WORK_TITLE,VARCHAR(254),The title of the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,EXPENSE_DETAIL,BILLING_TYPE,VARCHAR(16777216),"How this work is billed to the client. Possible values include Fixed Fee, Time and Materials, and Non-billable Fee."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,EXPENSE_DETAIL,CLIENT_ID,VARCHAR(12),The unique identifier of the client that the expense was assigned to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,EXPENSE_DETAIL,CLIENT_FULL_NAME,VARCHAR(256),The name of the client.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,EXPENSE_DETAIL,ACCOUNT_ID,VARCHAR(12),The tenant's unique identifier to whom this data belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,EXPENSE_DETAIL,ACCOUNT_NAME,VARCHAR(500),The tenant's name to whom this data belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,BILLING_ITEM_ID,,"The unique identifier for each line of an invoice, billable amount, and billed amount."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,INVOICE_APPROVED_DATE,,The date the invoice was approved.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,INVOICE_APPROVED_AT,,The timestamp the invoice was approved.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,TIME_ENTRY_ID,,The unique identifier for time entries.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,EXPENSE_ID,,The unique identifier for expenses.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,BILLING_ITEM_TYPE,,"The type of the billing item which can be work item, person, organization, client group, time entry, or expense."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,BILLING_TYPE,,"How this work is billed to the client. Possible values include Fixed Fee, Time and Materials, and Non-billable Fee."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,RECORDED_AND_BILLED_AMOUNT,,"The amount on invoice, not including adjustments."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,BILLED_AMOUNT,,The final amount on invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,INVOICE_NUMBER,,The number of the invoice as seen in app.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,INVOICE_ID,,The unique identifier for the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,INVOICE_LINE_ID,,The unique identifier for each line item in the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,INVOICE_STATUS_ID,,The corresponding identifier for each of the five invoice statuses.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,INVOICE_STATUS,,"The status of the invoice. Possible statuses include; Draft, Approved, Awaiting Payment, Paid, Exported, Voided"
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,IS_BILLED,Boolean,Current status of the invoice is any status besides Draft or Voided.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,WORK_ITEM_ID,,The unique identifier for the work item whose details are being provided.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,WORK_ITEM_TITLE,,The title of the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,CLIENT_ID,,The unique identifier of the client.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,CREATED_BY_USER_ID,,The unique identifier for the user who created the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,ACCOUNT_ID,,The tenant's unique identifier to whom this data belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM,ACCOUNT_NAME,,The tenant's name to whom this data belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,BILLING_ITEM_ID,,The unique identifier for the billing item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,WIP_ID,,The unique identifier of the Work in Progress entry (applies to both time and materials WIP and negative WIP).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,ENTITY_ID,,The unique identifier of the parent entity (can be either a work item or client depending on entity_type).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,ENTITY_TYPE,,"The type of parent entity (e.g., Work Item = 4, Client = 13, 2, or 37)."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,TIME_ENTRY_ID,,"The unique identifier of the associated time entry, if the WIP is a time entry"
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,EXPENSE_ID,,"The unique identifier of the associated expense entry, if the WIP is an expense entry."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,FIXED_FEE_WORK_ITEM_ID,,The unique identifier of the associated fixed fee work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,BILLING_TYPE,,"The type of billing method (Fixed Fee = 1, Time and Materials = 2)."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,IS_FINAL_BILL,Boolean,Boolean flag indicating if this is a final bill for fixed fee items. Multiple final bills can exist for the same fixed fee work item. But Time and Materials will not have the concept of Final Bill
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,IS_GENERATED_FROM_REALIZATION_EVENT,Boolean,"Boolean flag indicating if this was generated from a fixed fee realization event. True for final bills, interim bill reversals after final bill, final bill full WIP returns, and final bill write-off reversals."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,INVOICE_ID,,The unique identifier of the associated invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,INVOICE_DATE,,The reporting date of the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,APPROVED_DATETIME,,The timestamp when the invoice was last approved.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,INVOICE_STATUS,,The current status of the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,BILLING_ENTITY_ID,,The unique identifier of the client being billed.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,BILLING_ENTITY_TYPE_ID,,The ID of the client link type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,BILLING_ENTITY_TYPE_NAME,,The name of the client type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,CLIENT_ID    ,,"The unique identifier for the client associated with the billing item. If the billing item was created directly on a client record, this field displays that client's ID; if the billing item was created on a work item, this field displays the ID of the client assigned to that work item."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,USER_ID   ,,The unique identifier for the user associated with the billing item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,BILLED_AMOUNT,,The amount that was billed on the Billing Entity.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,RECORDED_AND_BILLED_AMOUNT,,"The amount that was recorded in WIP and subsequently billed. For fixed fee items, this represents the proportional distribution of the realization amount across time entries based on their relative costs."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,WRITE_ON_OFF_AMOUNT,,"The difference between billed amount and recorded amount. For fixed fee items, this can include adjustments from interim bill reversals, full WIP returns, and write-off reversals."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,ACCOUNT_ID,,The unique identifier of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,BILLING_ITEM_DETAIL_V2,ACCOUNT_NAME,,The name of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,WIP_ID,,The unique identifier of the WIP (Work in Progress.)
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,BILLING_ITEM_ID,,The unique identifier of the original billing item being credited.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,REVERSE_BILLING_ITEM_ID,,The unique identifier for this credit note billing item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,TIME_ENTRY_ID,,"The unique identifier of the associated time entry, if the credit is for a time entry."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,EXPENSE_ID,,"The unique identifier of the associated expense entry, if the credit is for an expense."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,FIXED_FEE_WORK_ITEM_ID,,"The unique identifier of the associated fixed fee work item, if the credit is for a fixed fee item."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,PARENT_ENTITY_ID,,The unique identifier of the parent entity (work item or client).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,PARENT_ENTITY_TYPE_ID,,The unique identifier representing the type of parent entity.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,PARENT_ENTITY_TYPE,,"The type of parent entity (e.g., Work Item or Client)."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,BILLING_TYPE_ID,,The unqiue identifier of the billing type from the original billing item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,BILLING_TYPE,,The type of billing from the original billing item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,IS_FINAL_BILL,Boolean,Boolean flag indicating if the credit is for a final bill.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,IS_GENERATED_FROM_REALIZATION_EVENT,Boolean,Boolean flag indicating if this credit was generated from a fixed fee realization event.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,INVOICE_ID,,The unique identifier of the original invoice being credited.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,INVOICE_DATE,,The date of the original invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,INVOICE_STATUS,,The status of the original invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,CREDIT_NOTE_ID,,The unique identifier of the credit note.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,CREDIT_NOTE_DATE,,The date of the credit note.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,APPROVED_DATETIME,,The timestamp when the credit note was approved.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,CREDIT_NOTE_STATUS,,The current status of the credit note.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,CREDIT_AMOUNT,,The amount being credited (excluding tax).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,REVERSE_BILLING_ITEM_RECORDED_AND_BILLED_AMOUNT,,"The amount that was originally recorded and billed, now being reversed."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,REVERSE_BILLING_ITEM_WRITE_ON_OFF_AMOUNT,,The write-on/off amount being reversed from the original billing item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,CLIENT_ID    ,,"The unique identifier for the client associated with the reverse billing item. If the corresponding billing item was created directly on a client record, this field displays that client's ID; if the corresponding billing item was created on a work item, this field displays the ID of the client assigned to that work item."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,USER_ID    ,,The unique identifier for the user associated with the reverse billing item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,ACCOUNT_ID,,The unique identifier of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,REVERSE_BILLING_ITEM_DETAIL,ACCOUNT_NAME,,The name of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,INVOICE_ID,,The unique identifier for the invoice
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,INVOICE_NUMBER,,The number of the invoice as seen in app.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,CLIENT_ID,,The unique identifier of the client.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,CLIENT,,The client's name to which the invoice item belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,APPROVED_BY_ID,,ID of the colleague who approved the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,APPROVED_BY,,The colleague name who approved the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,VOIDED_BY_ID,,ID of the colleague who approved the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,VOIDED_BY,,The colleague name who voided the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,INVOICE_STATUS_ID,,The corresponding identifier for each of the five invoice statuses.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,INVOICE_STATUS,,"The status of the invoice. Possible statuses include; Draft, Approved, Awaiting Payment, Paid, Exported, Voided"
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,INVOICE_DATE,,The date the invoice was sent.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,DUE_DATE,,The date the invoice is due by.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,PAID_IN_FULL_DATE,,The date the invoice was paid in full.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,APPROVED_DATETIME,,The timestamp the invoice was approved.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,VOIDED_DATETIME,,The timestamp the invoice was voided.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,WRITE_ON_OFF,,The amount the invoice was increased/decreased by compared to the amount of work done.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,INVOICE_AMOUNT,,The amount of all line items totalled.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,INVOICE_TAX_AMOUNT,,The amount of tax on the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,INVOICE_TOTAL,,The sum of invoice_amount and invoice_tax_amount.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,ACCOUNT_ID,,The tenant's name to whom the email belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE,ACCOUNT_NAME,,The tenant's unique identifier to whom the email belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,INVOICE_ID,,The unique identifier for the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,INVOICE_NUMBER,,The invoice number shown to customers.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,BILLING_ENTITY_ID,,The unique identifier of the billing entity (the entity we are billing).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,BILLING_ENTITY_TYPE_ID,,The unique identifier of the billing entity type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,BILLING_ENTITY_TYPE_NAME,,The name of the client type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,INVOICE_DATE,,The reporting date on the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,PAYMENT_DUE_DATE,,The due date for the invoice payment.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,FIRST_PAYMENT_DATE,,The date of the first payment received for this invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,LAST_PAYMENT_DATE,,The date of the most recent payment received for this invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,LAST_PAYMENT_OR_CREDIT_DATE,,The most recent date of either a payment or credit note.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,INVOICE_REVENUE_AMOUNT,,The revenue amount on the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,INVOICE_EXPENSE_AMOUNT,,The expense amount on the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,INVOICE_TAX_AMOUNT,,The tax amount on the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,INVOICE_TOTAL,,"The total amount of the invoice including revenue, expenses, and tax."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,PAYMENT_TOTAL,,The total amount of payments received for this invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,CREDIT_TOTAL,,The total amount of credit notes issued for this invoice (negative number).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,REMAINING_BALANCE,,The remaining balance to be paid (invoice_total - payment_total + credit_total).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,PAYMENT_STATUS,,"The current payment status of the invoice (Paid, Contra Invoice, Overdue, or Outstanding)."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,DAYS_PAST_DUE,,"For overdue invoices, the number of days past the due date."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,ACCOUNT_ID,,The unique identifier of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_POSTED,ACCOUNT_NAME,,The name of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,ENTITY_ID,,The unique identifier of the entity
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,ENTITY_TYPE,,"The type of entity. Possible types of entities include work item, client, time entry, and expense."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,WORK_ITEM_ID,,The work item's unique identifier assoicated with the WIP.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,WORK_TITLE,,The work item's title assoicated with the WIP.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,CLIENT_ID,,The client's unique identifier associated with the WIP.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,BILL_TO_CONTACT_ID,,The default billing contact's unique identifier. This is customizable to each client in the billing settings.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,CLIENT,,The client's name to who the WIP is associate with.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,BILL_TO_CONTACT,,The default billing contact's name. This is customizable to each client in the billing settings.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,BILLING_TYPE,,The billing type associated with the entity. Possible types include Time and Materials and Fixed Fee.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,TIME_RECORDED_AMOUNT,,The total amount for the recorded time on work items or clients that are still in WIP.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,TIME_BILLED_AMOUNT,,"The amount that was billed on items in WIP, including adjustments (Time Billed Amount = Time Recorded and Billed + Time Write On/Off"
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,TIME_RECORDED_AND_BILLED_AMOUNT,,"The amount that was billed on items in WIP, excluding adjustments."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,TIME_ADJUSTMENT_AMOUNT,,The amount written on or off on the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,TIME_WIP_AMOUNT,,The difference between the Time Billed and Total Recorded (Time WIP = Time Recorded - Fixed Fee)
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,FIXED_FEE_BILLED_AMOUNT,,The amount of fixed fees from WIP that is still billable (Fixed Fee Billable = Fixed Fee - Fixed Fee Billed)
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,FIXED_FEE_AMOUNT,,The total fixed fee for work items in WIP.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,FIXED_FEE_WIP_AMOUNT,,The difference between the Fixed Fee and Total Recorded (Fixed Fee WIP = Total Recorded - Fixed Fee)
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,EXPENSE_AMOUNT,,The total expenses added to work items or clients.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,EXPENSE_BILLED_AMOUNT,,"The amount of expenses billed, including adjustments."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,EXPENSE_RECORDED_AND_BILLED_AMOUNT,,"The amount of expense billed, excluding adjustments."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,EXPENSE_WIP_AMOUNT,,The total amount of expenses that are still billable to the client for WIP (Expenses Billable WIP = Expenses Amount - Expenses Billed)
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,TOTAL_WIP_AMOUNT,,"The combination of Time WIP, Fixed Fee WIP, and Expense WIP."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,ACCOUNT_ID,,The tenant's unique identifier to whom this data belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,ACCOUNT_NAME,,The tenant's name to whom this data belongs to.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,WIP_ITEM,EFFECTIVE_AS_DATE,,Date this table was last extracted from it's source.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,WIP_ID,,The unique identifier for the WIP entry.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,TIME_ENTRY_ID,,The unique identifier for the time entry if the WIP is a time entry.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,EXPENSE_ID,,The unique identifier for the expense if the WIP is an expense.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,WIP_TYPE,,"The type of WIP entry - time, expense or interim billed (negative wip)."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,DESCRIPTION,,The description of the WIP entry.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,WIP_ENTRY_DATE,,The reporting date for the WIP entry.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,WIP_ENTERED_AT,,The timestamp when the WIP was entered.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,USER_ID,,The unique identifier of the user who submitted the WIP.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,USER_NAME,,The name of the user who submitted the WIP.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,CLIENT_ID,,The unique identifier of the client associated with the WIP.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,WORK_ITEM_ID,,The unique identifier of the work item associated with the WIP.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,WORK_TITLE,,The title of the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,WORK_TYPE,,The type of work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,WORK_DUE_DATETIME,,The due date and time of the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,WORK_COMPLETED_DATETIME,,The completion date and time of the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,WORK_START_DATETIME,,The start date and time of the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,WORK_DEADLINE_DATETIME,,The deadline date and time of the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,ROLE_ID,,The unique identifier of the role associated with the WIP.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,ROLE_TITLE,,The title of the role.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,TASK_TYPE_ID,,The unique identifier of the task type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,TASK_TYPE_NAME,,The name of the task type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,TASK_TYPE_IS_BILLABLE,,Indicates if the task type is billable.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,BILLING_ENTITY_ID,,"The unique identifier of the billing entity, derived in order of precedence: work item's default billing client, contact's default billing client, or the original WIP client."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,BILLING_ENTITY_TYPE_NAME,,"The type of the billing entity, derived in order of precedence: work item's default billing type, contact's default billing type, or the original WIP client type."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,BILLING_ENTITY_CLIENT_ID,,The generated unique identifier combining the billing entity key and link type. Null if the client is an internal user.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,IS_INTERNAL_USER_BILLING_ENTITY,Boolean,Boolean flag indicating if the billing entity is an internal user (UserProfile). True when billing_entity_link_type is 'UserProfile'.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,INTERNAL_USER_BILLING_ENTITY_ID,,The unique identifier of the internal user when the billing entity is an internal user. Used for joining to user dimension tables.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,BILLING_TYPE_ID,,"The unique identifier of the billing type. (1: Fixed Fee, 2:Time and Materials, 3:Non Billable)"
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,BILLING_TYPE,,"The type of billing. (1: Fixed Fee, 2:Time and Materials, 3:Non Billable)"
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,MINUTES,,The number of minutes recorded for time entries.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,EXPENSE_AMOUNT,,The amount recorded for expense entries.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,BILLABLE_AMOUNT,,The billable amount for the time/ expense entry.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,ACCOUNT_ID,,The unique identifier of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_WIP,ACCOUNT_NAME,,The name of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_CREDIT_NOTE_BRIDGE,CREDIT_NOTE_INVOICE_ID,,The unique identifier for the invoice-credit note relationship.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_CREDIT_NOTE_BRIDGE,INVOICE_ID,,The unique identifier for the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_CREDIT_NOTE_BRIDGE,CREDIT_NOTE_ID,,The unique identifier for the credit note.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_CREDIT_NOTE_BRIDGE,INVOICE_DATE,,The reporting date of the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_CREDIT_NOTE_BRIDGE,CREDIT_NOTE_DATE,,The reporting date of the credit note.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_CREDIT_NOTE_BRIDGE,INVOICE_TOTAL,,The total amount of the invoice (includes tax).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_CREDIT_NOTE_BRIDGE,CREDIT_TOTAL,,The total amount of the credit note (includes tax).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_CREDIT_NOTE_BRIDGE,CREDIT_NOTE_APPLIED_AMOUNT,,The amount of the credit note applied to this invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_CREDIT_NOTE_BRIDGE,ACCOUNT_ID,,The unique identifier of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_CREDIT_NOTE_BRIDGE,ACCOUNT_NAME,,The name of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_PAYMENT_BRIDGE,INVOICE_PAYMENT_ID,,The unique identifier for the invoice-payment relationship.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_PAYMENT_BRIDGE,INVOICE_ID,,The unique identifier for the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_PAYMENT_BRIDGE,PAYMENT_ID,,The unique identifier for the payment.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_PAYMENT_BRIDGE,INVOICE_TOTAL,,The total amount of the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_PAYMENT_BRIDGE,PAYMENT_TOTAL,,The total amount of the payment.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_PAYMENT_BRIDGE,INVOICE_APPLIED_AMOUNT,,The amount of the payment applied to this invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_PAYMENT_BRIDGE,PAYMENT_DATE,,The date when the payment was made.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_PAYMENT_BRIDGE,INVOICE_DATE,,The reporting date of the invoice.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_PAYMENT_BRIDGE,ACCOUNT_ID,,The unique identifier of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,INVOICE_PAYMENT_BRIDGE,ACCOUNT_NAME,,The name of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_CREDIT_NOTE_POSTED,CREDIT_NOTE_ID,,The unique identifier for the credit note.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_CREDIT_NOTE_POSTED,CREDIT_NOTE_NUMBER,,The unique reference number for the credit note.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_CREDIT_NOTE_POSTED,BILLING_ENTITY_ID,,The unique identifier of the billing entity associated with the credit note.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_CREDIT_NOTE_POSTED,BILLING_ENTITY_TYPE_ID,,The ID of the billing entity type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_CREDIT_NOTE_POSTED,BILLING_ENTITY_TYPE_NAME,,The name of the client type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_CREDIT_NOTE_POSTED,CREDIT_NOTE_DATE,,The reporting date of the credit note.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_CREDIT_NOTE_POSTED,CREDIT_REVENUE_AMOUNT,,The revenue amount being credited.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_CREDIT_NOTE_POSTED,CREDIT_EXPENSE_AMOUNT,,The expense amount being credited.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_CREDIT_NOTE_POSTED,CREDIT_TAX_AMOUNT,,The tax amount being credited.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_CREDIT_NOTE_POSTED,CREDIT_TOTAL,,"The total amount of the credit note including revenue, expenses, and tax."
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_CREDIT_NOTE_POSTED,ACCOUNT_ID,,The unique identifier of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_CREDIT_NOTE_POSTED,ACCOUNT_NAME,,The name of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,PAYMENT_ID,,The unique identifier for the payment.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,PAYMENT_NUMBER,,The unique reference number for the payment.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,BILLING_ENTITY_ID,,The unique identifier of the billing entity associated with the payment.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,BILLING_ENTITY_TYPE_ID,,The ID of the billing entity type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,BILLING_ENTITY_TYPE_NAME,,The name of the client type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,PAYMENT_DATE,,The date when the payment was received.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,REFERENCE_TEXT,,The reference text or description associated with the payment.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,PAYMENT_TYPE_ID,,"The unique identifier for the payment type. (1: Manual Payment, 2: Karbon Payment)"
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,PAYMENT_TYPE,,"The type of payment (1: Manual Payment, 2: Karbon Payment)"
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,PAYMENT_METHOD_ID,,"The unique identifier for the payment method. (1: Bank Transfer, 2: Debit, 3: Credit Card Online, etc.)"
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,PAYMENT_METHOD,,The method used for the payment.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,PAYMENT_TOTAL,,The total amount of the payment.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,PAYMENT_NET,,The net amount of the payment.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,PAYMENT_FEE_AMOUNT,,The amount of fees charged for processing the payment.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,TAX_ON_FEE_AMOUNT,,The tax amount charged on payment processing fees.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,SURCHARGE_AMOUNT,,The surcharge amount applied to the payment.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,TAX_ON_SURCHAGE_AMOUNT,,The tax amount charged on payment surcharges.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,ACCOUNT_ID,,The unique identifier of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,DIMN_PAYMENT,ACCOUNT_NAME,,The name of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,ACCOUNT_ID,,The unique identifier of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,ACCOUNT_NAME,,The name of the account (tenant).
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,REPORTING_DATE,,The Reporting date for the WIP balance
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,WIP_ENTRY_DATE,,The date the WIP Item (Time Entry or Expense) was added
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,WIP_AGE,,Number of days between the WIP entry date and the reporting date.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,AGED_WIP_BALANCE,,The FIFO-adjusted WIP balance for aging where negative wip on fixed-fee work items is applied to the earliest WIP entry.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,CLOSING_WIP_BALANCE,,Unadjusted WIP balance at the reporting date.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,AGING_BUCKET,,Categorization of the WIP balance based on wip_age.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,AGED_WIP_0_30_DAYS,,WIP balance where aging_bucket = '0-30 Days'
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,AGED_WIP_31_60_DAYS,,WIP balance where aging_bucket = '31-60 Days'
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,AGED_WIP_61_90_DAYS,,WIP balance where aging_bucket = '61-90 Days'
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,AGED_WIP_91_120_DAYS,,WIP balance where aging_bucket = '91-120 Days'
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,AGED_WIP_121_PLUS_DAYS,,WIP balance where aging_bucket = '121+ Days'
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,AGING_BUCKET_ORDER,,Numeric field to help order aging buckets in reports.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,WIP_ID,,The unique identifier for the WIP item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,WORK_ITEM_ID,,The unique identifier for the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,CLIENT_ID,,The unique identifier for the client.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,TASK_TYPE_ID,,The unique identifier for the task type on the time entry.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,TASK_TYPE_NAME,,The name of the task type.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,WIP_TYPE,,"Type of WIP entry indicating whether it's a time entry, expense, or interim bill"
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,BILLING_TYPE,,"Billing type of the work item that the WIP entry belongs to (i.e. fixed fee, time and materials, or non-billable)"
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,ROLE_ID,,The unique identifier for the role assoicated with the WIP entry.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,ROLE_TITLE,,The title of the role.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,USER_ID,,The unique identifier of the Karbon user.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,USER_NAME,,The name of the Karbon user.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,WORK_TITLE,,The title of the work item.
+KPI_DATABASE,SECURE_VIEWS,Billing-Time-and-Budget-data,FACT_MONTHLY_WIP_AGING,WORK_TYPE,,The type of work of the work item.
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,CREDIT_NOTE_ID,VARCHAR(12),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,ORIGINATING_INVOICE_ID,VARCHAR(12),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,BILLING_ENTITY_ID,VARCHAR(12),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,BILLING_ENTITY_TYPE_ID,"NUMBER(38,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,BILLING_ENTITY_TYPE_NAME,VARCHAR(50),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,CREDIT_NOTE_STATUS_ID,"NUMBER(38,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,CREDIT_NOTE_STATUS,VARCHAR(50),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,CREDIT_NOTE_NUMBER,VARCHAR(50),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,DATE_CREATED,TIMESTAMP_NTZ(9),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,DATE_MODIFIED,TIMESTAMP_NTZ(9),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,CREDIT_NOTE_DATE,TIMESTAMP_NTZ(9),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,APPROVED_DATETIME,TIMESTAMP_NTZ(9),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,APPROVED_BY_USER_ID,VARCHAR(12),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,VOIDED_DATETIME,TIMESTAMP_NTZ(9),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,VOIDED_BY_USER_ID,VARCHAR(12),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,IS_APPROVED,BOOLEAN,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,IS_VOIDED,BOOLEAN,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,CREDIT_NOTE_AMOUNT,"NUMBER(19,4)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,CREDIT_TAX_AMOUNT,"NUMBER(19,4)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,CREDIT_TOTAL,"NUMBER(20,4)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,ACCOUNT_ID,VARCHAR(12),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_CREDIT_NOTE,ACCOUNT_NAME,VARCHAR(500),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,CALN_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,DAY_OF_WEEK,"NUMBER(3,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,WEEK_STRT_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,WEEK_END_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,ISO_DAY_OF_WEEK,"NUMBER(2,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,ISO_WEEK_STRT_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,ISO_WEEK_END_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,DAY_OF_WEEK_NAME,VARCHAR(3),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,DAY_OF_MNTH,"NUMBER(2,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,DAY_OF_YEAR,"NUMBER(4,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,WEEK_OF_YEAR,"NUMBER(2,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,CALN_MNTH,"NUMBER(2,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,CALN_MNTH_NAME,VARCHAR(3),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,MNTH_STRT_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,MNTH_END_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,PRVS_MNTH_STRT_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,PRVS_MNTH_END_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,QRTR_OF_YEAR,"NUMBER(2,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,QRTR_STRT_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,QRTR_END_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,PRVS_QRTR_STRT_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,PRVS_QRTR_END_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,CALN_YEAR,"NUMBER(4,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,YEAR_STRT_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,YEAR_END_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,PRVS_YEAR_STRT_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,DIMN_DATE,PRVS_YEAR_END_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,ACCOUNT_ID,VARCHAR(12),VARCHAR(12),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,ACCOUNT_NAME,VARCHAR(500),VARCHAR(500),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,CLIENT_LEADERSHIP_TITLE_POSITION_THREE,VARCHAR(16777216),VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS,Unlisted-data,CLIENT_LEADERSHIP_TITLE_POSITION_FOUR,VARCHAR(16777216),VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,BRIDGING_CLIENT_GROUP_MEMBER,client_group_id,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,BRIDGING_CLIENT_GROUP_MEMBER,client_group_name,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,BRIDGING_CLIENT_GROUP_MEMBER,client_id,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,BRIDGING_CLIENT_GROUP_MEMBER,account_id,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,BRIDGING_CLIENT_GROUP_MEMBER,account_name,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_CLIENT,client_id,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_CLIENT,client_name,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_CLIENT,client_type,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_CLIENT,client_subtype,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_CLIENT,client_owner_user_name,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_CLIENT,client_manager_user_name,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_CLIENT,client_leadership_position_three_user_name,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_CLIENT,client_leadership_position_four_user_name,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_CLIENT,account_name,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_CLIENT,account_id,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,CALN_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,DAY_OF_WEEK,"NUMBER(3,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,WEEK_STRT_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,WEEK_END_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,ISO_DAY_OF_WEEK,"NUMBER(2,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,ISO_WEEK_STRT_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,ISO_WEEK_END_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,DAY_OF_WEEK_NAME,VARCHAR(3),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,DAY_OF_MNTH,"NUMBER(2,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,DAY_OF_YEAR,"NUMBER(4,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,WEEK_OF_YEAR,"NUMBER(2,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,CALN_MNTH,"NUMBER(2,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,CALN_MNTH_NAME,VARCHAR(3),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,MNTH_STRT_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,MNTH_END_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,PRVS_MNTH_STRT_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,PRVS_MNTH_END_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,QRTR_OF_YEAR,"NUMBER(2,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,QRTR_STRT_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,QRTR_END_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,PRVS_QRTR_STRT_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,PRVS_QRTR_END_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,CALN_YEAR,"NUMBER(4,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,YEAR_STRT_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,YEAR_END_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,PRVS_YEAR_STRT_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,DIM_DATE,PRVS_YEAR_END_DATE,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,FACT_AR_AGING,client_id,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,FACT_AR_AGING,transaction_date,TIMESTAMP_LTZ(6),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,FACT_AR_AGING,invoice_payment_due_date,DATE,<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,FACT_AR_AGING,credit_value,"NUMBER(21,4)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,FACT_AR_AGING,transaction_value,"NUMBER(21,4)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,FACT_AR_AGING,account_name,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,FACT_AR_AGING,account_id,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,F_CUSTOM_FIELD,client_sk,"NUMBER(19,0)",<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,F_CUSTOM_FIELD,client_bk,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,F_CUSTOM_FIELD,custom_field_definition_bk,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,F_CUSTOM_FIELD,custom_field_name,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,F_CUSTOM_FIELD,custom_field_type,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,F_CUSTOM_FIELD,custom_field_value_bk,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,F_CUSTOM_FIELD,custom_field_value,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,F_CUSTOM_FIELD,account_id,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,SECURE_VIEWS_KARBON_ANALYTICS,SECURE_VIEWS_KARBON_ANALYTICS,F_CUSTOM_FIELD,account_name,VARCHAR(16777216),<Karbon has not provided details>
+KPI_DATABASE,USAGE_TRACKING,USAGE_TRACKING,BILLING,Description,VARCHAR(43),This is used for internal tracking purposes
+KPI_DATABASE,USAGE_TRACKING,USAGE_TRACKING,BUDGET,Description,VARCHAR(43),This is used for internal tracking purposes
+KPI_DATABASE,USAGE_TRACKING,USAGE_TRACKING,BUDGET_V2,Description,VARCHAR(43),This is used for internal tracking purposes
+KPI_DATABASE,USAGE_TRACKING,USAGE_TRACKING,EMAIL,Description,VARCHAR(43),This is used for internal tracking purposes
+KPI_DATABASE,USAGE_TRACKING,USAGE_TRACKING,REPEATING_WORK,Description,VARCHAR(43),This is used for internal tracking purposes
+KPI_DATABASE,USAGE_TRACKING,USAGE_TRACKING,RESOURCE_PLANNING,Description,VARCHAR(43),This is used for internal tracking purposes
+KPI_DATABASE,USAGE_TRACKING,USAGE_TRACKING,TIME,Description,VARCHAR(43),This is used for internal tracking purposes
+KPI_DATABASE,USAGE_TRACKING,USAGE_TRACKING,WORK_OUTSTANDING,Description,VARCHAR(43),This is used for internal tracking purposes
+KPI_DATABASE,USAGE_TRACKING,USAGE_TRACKING,WORK_STATUS,Description,VARCHAR(43),This is used for internal tracking purposes
